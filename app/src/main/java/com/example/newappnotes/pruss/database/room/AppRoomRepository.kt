@@ -7,13 +7,13 @@ import com.example.newappnotes.pruss.models.AppNote
 class AppRoomRepository(private val appRoomDao: AppRoomDao):DatabaseRepository {
 
     override val allNotes: LiveData<List<AppNote>>
-        get() = TODO("Not yet implemented")
+        get() = appRoomDao.getAllNotes()
 
     override suspend fun insert(note: AppNote, onSuccess: () -> Unit) {
-        TODO("Not yet implemented")
+        appRoomDao.insert(note)
     }
 
     override suspend fun delete(note: AppNote, onSuccess: () -> Unit) {
-        TODO("Not yet implemented")
+        appRoomDao.delete(note)
     }
 }
