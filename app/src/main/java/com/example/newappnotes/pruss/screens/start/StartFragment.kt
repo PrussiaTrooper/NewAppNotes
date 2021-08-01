@@ -6,7 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
+import com.example.newappnotes.pruss.R
 import com.example.newappnotes.pruss.databinding.FragmentStartBinding
+import com.example.newappnotes.pruss.utilits.APP_ACTIVITY
 import com.example.newappnotes.pruss.utilits.TYPE_ROOM
 
 
@@ -33,7 +35,9 @@ class StartFragment : Fragment() {
     private fun initialization() {
         mViewModel = ViewModelProvider(this).get(StartFragmentViewModel::class.java)
         _binding?.btnRoom?.setOnClickListener {
-            mViewModel.initDatabase(TYPE_ROOM)
+            mViewModel.initDatabase(TYPE_ROOM){
+                APP_ACTIVITY.mNavController.navigate(R.id.action_startFragment_to_mainFragment)
+            }
         }
-        }
-    }
+     }
+}
