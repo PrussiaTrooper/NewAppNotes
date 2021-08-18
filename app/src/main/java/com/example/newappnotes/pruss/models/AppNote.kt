@@ -10,5 +10,4 @@ data class AppNote(
         @ColumnInfo val name:String = "",
         @ColumnInfo val text:String = ""
 
-
 )

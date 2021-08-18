@@ -25,7 +25,6 @@ abstract class AppRoomDatabase:RoomDatabase() {
                 ).build()
                 database as AppRoomDatabase
             } else database as AppRoomDatabase
-
         }
     }
 }

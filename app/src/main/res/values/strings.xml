@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">NewAppNotes</string>
     <string name="floating_button">floating_button</string>
+    <string name="item_note_name">Добавить</string>
     <string name="btn_add_note">Добавить</string>
     <string name="start_label">Что использовать?</string>
     <string name="start_btn_room">ROOM</string>

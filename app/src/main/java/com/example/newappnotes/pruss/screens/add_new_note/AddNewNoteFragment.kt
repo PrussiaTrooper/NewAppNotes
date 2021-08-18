@@ -12,7 +12,6 @@ import com.example.newappnotes.pruss.models.AppNote
 import com.example.newappnotes.pruss.utilits.APP_ACTIVITY
 import com.example.newappnotes.pruss.utilits.showToast
 
-
 class AddNewNoteFragment : Fragment() {
 
     private var _binding:FragmentAddNewNoteBinding?=null
