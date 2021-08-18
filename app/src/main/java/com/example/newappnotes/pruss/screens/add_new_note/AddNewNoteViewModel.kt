@@ -10,7 +10,7 @@ import kotlinx.coroutines.launch
 
 class AddNewNoteViewModel(application: Application):AndroidViewModel(application) /*ввод имени заметки*/{
   /*Вставка заметки в базу данных*/
-  fun insert(note:AppNote,onSuccsess:()-> Unit) =
+  fun insert(note:AppNote,onSuccsess:() -> Unit) =
           /*Запуск функции в отдельной корунтине*/
           viewModelScope.launch(Dispatchers.IO) {
               REPOSITORY.insert(note){//корунтина
